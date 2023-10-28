@@ -1,0 +1,44 @@
+{
+  "num_trials": 50,
+  "hyperparameters": [
+    {
+      "loss": "loss",
+      "short_desc": "The loss function to use in the boosting process.",
+      "default": "squared_error",
+      "type": "categorical",
+      "categories": ["squared_error", "absolute_error", "gamma", "poisson", "quantile"]
+    },
+    {
+      "name": "learning_rate",
+      "short_desc": "The learning rate, also known as shrinkage.",
+      "type": "float",
+      "search_type": "uniform",
+      "range_low": 0,
+      "range_high": 10
+    },
+    {
+      "name": "max_depth",
+      "short_desc": "The maximum depth of each tree.",
+      "type": "int",
+      "search_type": "uniform",
+      "range_low": 5,
+      "range_high": 50
+    },
+    {
+      "name": "min_samples_leaf",
+      "short_desc": "The minimum number of samples per leaf.",
+      "type": "int",
+      "search_type": "uniform",
+      "range_low": 5,
+      "range_high": 50
+    },
+    {
+      "name": "max_leaf_nodes",
+      "short_desc": "The maximum number of leaves for each tree.",
+      "type": "int",
+      "search_type": "uniform",
+      "range_low": 2,
+      "range_high": 50
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+ "loss":"squared_error",
+  "learning_rate": 0.1,
+  "max_depth": null,
+  "max_leaf_nodes": 31,
+  "min_samples_leaf": 20
+}
