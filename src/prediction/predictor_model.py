@@ -57,10 +57,10 @@ class Regressor:
             built.
 
         """
-        self.loss = loss,
+        self.loss = loss
         self.learning_rate = float(learning_rate)
         self.max_depth = max_depth
-        self.max_leaf_nodes = max_leaf_nodes,
+        self.max_leaf_nodes = max_leaf_nodes
         self.min_samples_leaf = min_samples_leaf
         self.model = self.build_model()
         self._is_trained = False
@@ -68,7 +68,7 @@ class Regressor:
     def build_model(self) -> HistGradientBoostingRegressor:
         """Build a new HistGradientBoosting regressor."""
         model = HistGradientBoostingRegressor(
-            loss=self.loss,
+            # loss=self.loss,
             learning_rate=self.learning_rate,
             max_depth=self.max_depth,
             min_samples_leaf=self.min_samples_leaf,
