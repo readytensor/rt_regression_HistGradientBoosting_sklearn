@@ -68,7 +68,7 @@ class Regressor:
     def build_model(self) -> HistGradientBoostingRegressor:
         """Build a new HistGradientBoosting regressor."""
         model = HistGradientBoostingRegressor(
-            # loss=self.loss,
+            loss=self.loss,
             learning_rate=self.learning_rate,
             max_depth=self.max_depth,
             min_samples_leaf=self.min_samples_leaf,
